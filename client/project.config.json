@@ -1,0 +1,102 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.3",
+	"appid": "wx7eaf6ecbafd21b10",
+	"projectname": "shop",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "product",
+					"pathName": "pages/product/product",
+					"query": "id=11",
+					"scene": "1097"
+				},
+				{
+					"id": -1,
+					"name": "category",
+					"pathName": "pages/category/category",
+					"query": "",
+					"scene": "1097"
+				},
+				{
+					"id": 2,
+					"name": "demo",
+					"pathName": "pages/demo/demo",
+					"query": "",
+					"scene": "1097"
+				},
+				{
+					"id": 3,
+					"name": "cart",
+					"pathName": "pages/cart/cart",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "order",
+					"pathName": "pages/order/order",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "order",
+					"pathName": "pages/order/order",
+					"query": "account=0.1&from=cart",
+					"scene": "1097"
+				},
+				{
+					"id": 6,
+					"name": "orderMy",
+					"pathName": "pages/order/order",
+					"query": "id=585",
+					"scene": "1097"
+				},
+				{
+					"id": -1,
+					"name": "my",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": "1097"
+				},
+				{
+					"id": 8,
+					"name": "TS",
+					"pathName": "pages/pay-result/pay-result",
+					"query": "from=my&id=585&flag=false",
+					"scene": "1097"
+				}
+			]
+		}
+	}
+}

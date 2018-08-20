@@ -1,0 +1,64 @@
+获取token
+api/:version/token/user/:code get     b0e5a735d82df6217d7f3bb61f7c4259
+
+获取Banner信息
+url  api/:version/banner/:id   get
+
+返回首页主题列表
+url  api/v1/theme?ids=:str      get
+
+返回主题详情页所需数据头图地址+主题下商品信息+商品图片
+@url  api/:version/theme/:id    get
+
+获取指定数量的最近商品
+* @url /product/recent?count=:count get
+
+获取分类列表
+api/:version/category/all get
+
+* 获取某分类下全部商品
+api/:version/product/all?id=:category_id&paginate=...&size=... get
+paginate  是否启用分页 默认为false
+size      每页条数     默认为6
+page      当前页       默认为1
+
+*获取商品详情(基本+属性+详情图)
+api/:version/product/:id get
+
+*更新或者创建用户收获地址 post
+api/:version/address    header--token   post---s\s\x\n\t
+ 'name' => 'require|isNotEmpty',
+ 'mobile' => 'require|isMobile',
+ 'province' => 'require|isNotEmpty',
+ 'city' => 'require|isNotEmpty',
+ 'country' => 'require|isNotEmpty',
+ 'detail' => 'require|isNotEmpty',
+
+ 下订单
+api/:version/order  post
+param：products  [['product_id'=>,'count'=>],[],[]]
+return:{"order_no":"B803302919840244","order_id":"555","create_time":1533230292,"pass":true}
+
+生成支付预订单
+api/:version/pay/pre_order  post  @param :id 订单id
+
+支付回调
+api/:version/pay/notify
+
+//查询订单列表
+api/:version/order/by_user get @param :page :size
+
+订单详情
+api/:version/order/:id get
+
+查询所有订单
+api/:version/order/paginate
+
+初始化时验证token  @param   post token
+api/:version/token/verify
+
+//获取用户地址
+api/:version/address
+
+CMS登录
+api/:version/token/app  post  userName userPwd

@@ -1,0 +1,7 @@
+<!--pages/demo/demo.wxml-->
+<text bindtap='addDemo'>添加</text>
+<text bindtap='requestDemo'>获取</text>
+<text bindtap='jump'>跳</text>
+<loading hidden="{{loadingHidden}}">
+    加载中...
+</loading>
